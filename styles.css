@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.main-container {
+  height: 26rem;
+  width: 26rem;
+  background-color: #1f2630;
+  border-radius: 15px;
+}
+
+.inner-container {
+  height: 100%;
+  padding: 2rem;
+}
+.inner-container .rating-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.inner-container .rating-screen .star-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-container .rating-screen .text-content h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.inner-container .rating-screen .text-content p {
+  color: hsl(217deg, 12%, 63%);
+}
+.inner-container .rating-screen .ratings {
+  color: hsl(217deg, 12%, 63%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inner-container .rating-screen .ratings > input[type=radio] {
+  display: none;
+}
+.inner-container .rating-screen .ratings > label[class=star-icon]:hover {
+  cursor: pointer;
+  background-color: hsl(216deg, 12%, 54%);
+  color: white;
+}
+.inner-container .rating-screen .ratings > input[type=radio]:checked + label[class=star-icon] {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.inner-container .rating-screen .submit {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.inner-container .rating-screen .submit:hover {
+  cursor: pointer;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+.inner-container .success-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+.inner-container .success-screen .rating-result {
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 0.5rem 1rem;
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 2rem;
+}
+.inner-container .success-screen .success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.inner-container .success-screen .success-message h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.inner-container .success-screen .success-message p {
+  color: hsl(217deg, 12%, 63%);
+  text-align: center;
+}
+.inner-container .hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 430px) {
+  .main-container {
+    width: 22rem;
+  }
+  .inner-container {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
